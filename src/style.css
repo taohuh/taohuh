@@ -359,11 +359,32 @@ html {
 /**
  * Basic styles for links
  */
+/* baloo-2-regular - latin */
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../../assets/fonts/baloo-2-v1-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Baloo 2 Regular"), local("Baloo2-Regular"), url("./../../assets/fonts/baloo-2-v1-latin-regular.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/baloo-2-v1-latin-regular.woff2") format("woff2"), url("./../../assets/fonts/baloo-2-v1-latin-regular.woff") format("woff"), url("./../../assets/fonts/baloo-2-v1-latin-regular.ttf") format("truetype"), url("./../../assets/fonts/baloo-2-v1-latin-regular.svg#Baloo2") format("svg");
+  /* Legacy iOS */
+}
+/* baloo-2-700 - latin */
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../../assets/fonts/baloo-2-v1-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Baloo 2 Bold"), local("Baloo2-Bold"), url("./../../assets/fonts/baloo-2-v1-latin-700.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/baloo-2-v1-latin-700.woff2") format("woff2"), url("./../../assets/fonts/baloo-2-v1-latin-700.woff") format("woff"), url("./../../assets/fonts/baloo-2-v1-latin-700.ttf") format("truetype"), url("./../../assets/fonts/baloo-2-v1-latin-700.svg#Baloo2") format("svg");
+  /* Legacy iOS */
+}
 /**
  * Basic typography style for copy text
  */
 body {
   color: #000;
+  font-family: "Baloo 2", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */
