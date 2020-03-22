@@ -5,7 +5,8 @@
 @font-face {
   font-family: 'Baloo 2';
   font-style: normal;
-	font-weight: 400;
+  font-weight: 400;
+  font-display: swap;
   src: url('./../../assets/fonts/baloo-2-v1-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Baloo 2 Regular'), local('Baloo2-Regular'),
        url('./../../assets/fonts/baloo-2-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -19,6 +20,7 @@
   font-family: 'Baloo 2';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('./../../assets/fonts/baloo-2-v1-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Baloo 2 Bold'), local('Baloo2-Bold'),
        url('./../../assets/fonts/baloo-2-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
