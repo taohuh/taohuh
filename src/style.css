@@ -429,14 +429,28 @@ body {
   }
 }
 
+.text-bg {
+  position: absolute;
+  font-size: 25rem;
+  z-index: -1;
+  color: rgba(237, 224, 223, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .post-image {
   position: relative;
+  color: #000;
 }
 .post-image:nth-child(1) {
   grid-column: 2/7;
 }
 .post-image:nth-child(2) {
   grid-column: 8/13;
+}
+.post-image:hover > .arrow {
+  transform: translateX(50%);
 }
 .post-image > .collection {
   position: absolute;
@@ -450,39 +464,49 @@ body {
   width: 15rem;
   height: 22.5rem;
 }
-.post-image > .title {
+.post-image > .title,
+.post-image > .arrow {
   position: absolute;
   font-size: 24px;
   bottom: 1rem;
   left: -3rem;
+}
+.post-image > .arrow {
+  color: rgba(0, 0, 0, 0.4);
+  bottom: -2rem;
+  transition: transform 400ms ease-in-out;
 }
 
 .post-list > ul > .post-list-item {
   margin-bottom: 1.5rem;
   display: flex;
 }
-.post-list > ul > .post-list-item > .collection {
-  color: rgba(0, 0, 0, 0.4);
-  flex-basis: 20%;
-}
 .post-list > ul > .post-list-item > .title {
-  margin-left: 4.5rem;
   display: flex;
   justify-content: space-between;
   flex: 1;
   color: #000;
 }
-.post-list > ul > .post-list-item > .title > .arrow {
+.post-list > ul > .post-list-item > .title > .collection {
+  color: rgba(0, 0, 0, 0.4);
+  flex-basis: 25%;
+}
+.post-list > ul > .post-list-item > .title > .group {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.post-list > ul > .post-list-item > .title > .group > .arrow {
   color: rgba(0, 0, 0, 0.4);
 }
 
 .port-01 {
-  background: #fff;
-  color: #000;
-  font-family: "Cookie", cursive;
-  height: 100%;
   position: relative;
   padding: 3.75rem;
+  height: 100%;
+  font-family: "Cookie", cursive;
+  background: #fff;
+  color: #000;
 }
 .port-01 .navbar {
   position: absolute;
@@ -546,7 +570,6 @@ body {
 }
 .port-01 .left > .post-list {
   grid-column: 2/9;
-  margin-right: 2rem;
 }
 .port-01 .right {
   display: grid;
@@ -555,7 +578,6 @@ body {
 }
 .port-01 .right > .post-list {
   grid-column: 2/9;
-  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

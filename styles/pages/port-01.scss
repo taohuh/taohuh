@@ -1,15 +1,15 @@
-@import '../components/post-image.scss';
-@import '../components/post-list.scss';
+@import '../components/port-01/text-bg.scss';
+@import '../components/port-01/post-image.scss';
+@import '../components/port-01/post-list.scss';
 
 .port-01 {
-	background: $white;
-	color: $black;
-	font-family: 'Cookie', cursive;
+	position: relative;
+	padding: rem(60);
 	height: 100%;
 
-	position: relative;
-
-	padding: rem(60);
+	font-family: 'Cookie', cursive;
+	background: $white;
+	color: $black;
 
 	.navbar {
 		position: absolute;
@@ -84,7 +84,6 @@
 
 		> .post-list {
 			grid-column: 2 / 9;
-			margin-right: rem(32);
 		}
 	}
 
@@ -95,7 +94,6 @@
 
 		> .post-list {
 			grid-column: 2 / 9;
-			margin-right: rem(32);
 		}
 	}
 }

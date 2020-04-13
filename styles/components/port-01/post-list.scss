@@ -4,21 +4,25 @@
 			margin-bottom: rem(24);
 			display: flex;
 
-			> .collection {
-				color: $grey-04;
-				flex-basis: 20%;
-			}
-
 			> .title {
-				margin-left: rem(72);
 				display: flex;
 				justify-content: space-between;
 				flex: 1;
-
 				color: $black;
 
-				> .arrow {
+				> .collection {
 					color: $grey-04;
+					flex-basis: 25%;
+				}
+
+				> .group {
+					display: flex;
+					justify-content: space-between;
+					flex: 1;
+
+					> .arrow {
+						color: $grey-04;
+					}
 				}
 			}
 		}
