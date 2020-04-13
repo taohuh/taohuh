@@ -1,0 +1,32 @@
+.post-image {
+	position: relative;
+
+	&:nth-child(1) {
+		grid-column: 2 / 7;
+	}
+
+	&:nth-child(2) {
+		grid-column: 8 / 13;
+	}
+
+	> .collection {
+		position: absolute;
+		left: rem(-62);
+		transform: rotate(-90deg);
+		top: rem(20);
+		color: $grey-04;
+	}
+
+	> .image {
+		object-fit: cover;
+		width: rem(240);
+		height: rem(360);
+	}
+
+	> .title {
+		position: absolute;
+		font-size: $font-24;
+		bottom: rem(16);
+		left: rem(-48);
+	}
+}
