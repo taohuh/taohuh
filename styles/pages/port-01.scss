@@ -1,0 +1,101 @@
+@import '../components/post-image.scss';
+@import '../components/post-list.scss';
+
+.port-01 {
+	background: $white;
+	color: $black;
+	font-family: 'Cookie', cursive;
+	height: 100%;
+
+	position: relative;
+
+	padding: rem(60);
+
+	.navbar {
+		position: absolute;
+		left: rem(-24);
+		transform: rotate(-90deg);
+		top: 80%;
+
+		ul {
+			display: flex;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 140%;
+				top: 50%;
+				transform: translateY(-50%);
+				width: rem(154);
+				height: rem(1);
+				background-color: $black;
+			}
+
+			a {
+				color: $black;
+			}
+
+			.link-instagram {
+				margin-left: rem(32);
+			}
+		}
+	}
+
+	.header {
+		text-align: center;
+
+		> .text {
+			position: relative;
+			font-size: $font-24;
+
+			&::before {
+				content: "·";
+				position: absolute;
+				top: rem(-20);
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&::after {
+				content: "·";
+				position: absolute;
+				top: rem(20);
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	.content {
+		margin-top: rem(64);
+
+		> .row {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			margin-bottom: rem(48);
+		}
+	}
+
+	.left {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column: 1 / 7;
+
+		> .post-list {
+			grid-column: 2 / 9;
+			margin-right: rem(32);
+		}
+	}
+
+	.right {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column: 7 / 13;
+
+		> .post-list {
+			grid-column: 2 / 9;
+			margin-right: rem(32);
+		}
+	}
+}
