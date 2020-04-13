@@ -481,6 +481,9 @@ body {
   margin-bottom: 1.5rem;
   display: flex;
 }
+.post-list > ul > .post-list-item:hover .arrow {
+  transform: translateX(50%);
+}
 .post-list > ul > .post-list-item > .title {
   display: flex;
   justify-content: space-between;
@@ -498,6 +501,7 @@ body {
 }
 .post-list > ul > .post-list-item > .title > .group > .arrow {
   color: rgba(0, 0, 0, 0.4);
+  transition: transform 400ms ease-in-out;
 }
 
 .port-01 {

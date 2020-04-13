@@ -4,6 +4,12 @@
 			margin-bottom: rem(24);
 			display: flex;
 
+			&:hover {
+				.arrow {
+					transform: translateX(50%);
+				}
+			}
+
 			> .title {
 				display: flex;
 				justify-content: space-between;
@@ -22,6 +28,8 @@
 
 					> .arrow {
 						color: $grey-04;
+
+						transition: transform 400ms ease-in-out;
 					}
 				}
 			}
