@@ -1,0 +1,9 @@
+.text-bg {
+	position: absolute;
+	font-size: rem(400);
+	z-index: -1;
+	color: $pink-05;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

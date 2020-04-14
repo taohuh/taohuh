@@ -1,0 +1,38 @@
+.post-list {
+	> ul {
+		> .post-list-item {
+			margin-bottom: rem(24);
+			display: flex;
+
+			&:hover {
+				.arrow {
+					transform: translateX(50%);
+				}
+			}
+
+			> .title {
+				display: flex;
+				justify-content: space-between;
+				flex: 1;
+				color: $black;
+
+				> .collection {
+					color: $grey-04;
+					flex-basis: 25%;
+				}
+
+				> .group {
+					display: flex;
+					justify-content: space-between;
+					flex: 1;
+
+					> .arrow {
+						color: $grey-04;
+
+						transition: transform 400ms ease-in-out;
+					}
+				}
+			}
+		}
+	}
+}
