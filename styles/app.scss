@@ -11,6 +11,11 @@
 	'base/typography',
 	'base/helper';
 
-@import 'layout/home';
+@import 'components/display-logo';
 
+@import 'pages/home';
 @import 'pages/port-01';
+@import 'pages/port-02';
+@import 'pages/port-03';
+@import 'pages/port-04';
+@import 'pages/port-05';
