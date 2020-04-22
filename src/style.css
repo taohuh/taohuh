@@ -635,6 +635,20 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.port-02 .link-underline {
+  position: relative;
+  width: fit-content;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.port-02 .link-underline::before {
+  content: "";
+  position: absolute;
+  top: 1.5625rem;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #5da8ef;
+}
 .port-02 .header {
   grid-area: header;
 }
@@ -685,6 +699,51 @@ body {
   width: 0.125rem;
   height: 6.25rem;
   background-color: #5da8ef;
+}
+.port-02 .content .surfing-content-img {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.port-02 .content .surfing-content-img .img {
+  grid-column: 2/8;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.port-02 .content .surfing-content-img .detail {
+  padding-top: 3.75rem;
+  padding-bottom: 3.125rem;
+  grid-column: 3/6;
+  color: rgba(97, 97, 97, 0.65);
+  line-height: 1.7;
+}
+.port-02 .content .surfing-content-img .read-more {
+  grid-column: 3/8;
+}
+.port-02 .content .surfing-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 13.3125rem;
+  text-align: center;
+}
+.port-02 .content .surfing-slide .shop {
+  font-size: 0.75rem;
+  color: #5da8ef;
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
+}
+.port-02 .content .surfing-slide .slide {
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+}
+.port-02 .content .surfing-slide .title {
+  margin: 0;
+  font-size: 2.625rem;
+  color: #333;
+}
+.port-02 .content .surfing-slide .show-all {
+  margin: 0 auto;
 }
 .port-02 .footer {
   grid-area: footer;
